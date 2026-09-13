@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Senandika</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b0b0b;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 8%;
+            border-bottom: 1px solid #222;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 4px;
+        }
+
+        nav a {
+            color: #aaa;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 8%;
+        }
+
+        .small {
+            color: #777;
+            letter-spacing: 4px;
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin-bottom: 25px;
+        }
+
+        .desc {
+            color: #aaa;
+            max-width: 500px;
+            line-height: 1.7;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 25px;
+            border: 1px solid #555;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            width: fit-content;
+        }
+
+        .button:hover {
+            background: white;
+            color: black;
+        }
+
+        section {
+            padding: 70px 8%;
+            border-top: 1px solid #222;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .card {
+            background: #151515;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #222;
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #999;
+            line-height: 1.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">SENANDIKA</div>
+
+        <div>
+            <a href="#tentang">Tentang</a>
+            <a href="#suka">Favorites</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="small">WELCOME TO MY SPACE</div>
+
+        <h1>Senandika.</h1>
+
+        <p class="desc">
+            tempat buat nyimpen musik, cerita, puisi,
+            dan hal-hal kecil yang punya arti.
+        </p>
+
+        <a href="#tentang" class="button">
+            masuk →
+        </a>
+    </div>
+
+    <section id="tentang">
+        <h2>Tentang gue</h2>
+
+        <p class="desc">
+            gue suka musik, gitar, tulisan, dan perjalanan kecil
+            yang kadang nggak direncanain.
+            website ini adalah ruang kecil buat semuanya.
+        </p>
+    </section>
+
+    <section id="suka">
+        <h2>Things I Like</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Guitar</h3>
+                <p>
+                    belajar chord, petikan, dan lagu-lagu
+                    yang enak dimainkan malam-malam.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Music</h3>
+                <p>
+                    Dewa 19, Slank, Padi, Mahadewa,
+                    Hindia, Tulus, dan banyak lagi.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Poetry</h3>
+                <p>
+                    kata-kata yang kadang lebih gampang
+                    ditulis daripada diucapkan.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Motor</h3>
+                <p>
+                    suara mesin, jalanan, dan perjalanan
+                    tanpa terlalu banyak rencana.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Senandika
+    </footer>
+
+</body>
+</html>
