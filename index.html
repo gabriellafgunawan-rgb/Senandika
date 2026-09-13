@@ -39,6 +39,10 @@
             margin-left: 15px;
         }
 
+        nav a:hover {
+            color: white;
+        }
+
         .hero {
             min-height: 75vh;
             display: flex;
@@ -113,6 +117,51 @@
             line-height: 1.6;
         }
 
+        /* SURAT SENANDIKA */
+
+        .letter-form {
+            max-width: 600px;
+        }
+
+        .letter-form input,
+        .letter-form textarea {
+            width: 100%;
+            background: #151515;
+            color: white;
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+            outline: none;
+        }
+
+        .letter-form input:focus,
+        .letter-form textarea:focus {
+            border-color: #777;
+        }
+
+        .letter-form textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .letter-form button {
+            background: transparent;
+            color: white;
+            border: 1px solid #555;
+            border-radius: 30px;
+            padding: 13px 25px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .letter-form button:hover {
+            background: white;
+            color: black;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -130,6 +179,7 @@
         <div>
             <a href="#tentang">Tentang</a>
             <a href="#suka">Favorites</a>
+            <a href="#surat">Surat</a>
         </div>
     </nav>
 
@@ -196,6 +246,44 @@
             </div>
 
         </div>
+    </section>
+
+    <!-- SURAT SENANDIKA -->
+
+    <section id="surat">
+        <h2>Surat Senandika</h2>
+
+        <p class="desc">
+            kalau ada sesuatu yang mau disampaikan,
+            tinggalkan surat kecil di sini.
+        </p>
+
+        <br>
+
+        <form
+            class="letter-form"
+            action="https://formspree.io/f/mqpkvqjv"
+            method="POST"
+        >
+
+            <input
+                type="text"
+                name="nama"
+                placeholder="Nama kamu"
+                required
+            >
+
+            <textarea
+                name="pesan"
+                placeholder="Tulis pesanmu di sini..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Kirim Surat →
+            </button>
+
+        </form>
     </section>
 
     <footer>
